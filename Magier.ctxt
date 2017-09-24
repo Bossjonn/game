@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Magier
+comment0.text=\r\n\ Beschreiben\ Sie\ hier\ die\ Klasse\ Magier.\r\n\ \r\n\ @author\ (Ihr\ Name)\ \r\n\ @version\ (eine\ Versionsnummer\ oder\ ein\ Datum)\r\n
+comment1.params=
+comment1.target=Magier()
+comment2.params=
+comment2.target=java.lang.String\ sagItem()
+comment3.params=n\ m
+comment3.target=void\ nehme(int,\ java.lang.String)
+numComments=4

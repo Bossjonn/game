@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Spiel
+comment1.params=
+comment1.target=Spiel()
+comment10.params=command
+comment10.target=void\ geheO(Command)
+comment11.params=command
+comment11.target=void\ geheS(Command)
+comment12.params=command
+comment12.target=void\ geheW(Command)
+comment2.params=
+comment2.target=void\ Spielen()
+comment3.params=
+comment3.target=void\ W\u00E4hlen()
+comment4.params=
+comment4.target=void\ getName()
+comment5.params=
+comment5.target=void\ game1()
+comment6.params=command
+comment6.target=boolean\ action(Command)
+comment7.params=b\ n
+comment7.target=void\ nehme(int,\ java.lang.String)
+comment8.params=
+comment8.target=void\ helfe()
+comment9.params=command
+comment9.target=void\ geheN(Command)
+numComments=13

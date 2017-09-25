@@ -9,22 +9,22 @@ public class Magier extends Mensch
 {
         int Kraft=25;
     int Ausdauer=30;
-      String[] Inventar=new String[30];
+      Gegendstang[] Inventar=new Gegendstang[30];
     int Intelligenz=90;
-     
+     Schlüssel Schlüssel=new Schlüssel();
     public Magier()
     { 
    
-        Inventar[0]="Kompass";
+        Inventar[0]=Schlüssel;
        
     }
-    public String sagItem(){
+    public Gegendstang sagItem(){
     
-    return Inventar[0];
+    return Inventar[0]=new Schlüssel();
     
     
     }
-    public void nehme(int n,String m){
+    public void nehme(int n,Gegendstang m){
     
         Inventar[n]=m;
         System.out.println("du hast im "+n+" Slot einen"+m);

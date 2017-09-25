@@ -5,7 +5,7 @@
 {
     
     Gegendstang Gegendstang;
-    Gegendstang[][]Welt=  new Gegendstang[56][38];
+    Gegendstang[][]Welt=  new Gegendstang[56][56];
     Wand Wand=new Wand();
     Tür Tür1=new Tür();
     Tür Tür2=new Tür();
@@ -13,13 +13,42 @@
     Tür Tür4=new Tür();
     Tür Tür5=new Tür();
     Schlüssel Schlüssel=new Schlüssel();
+    Boden Boden=new Boden();
     public Welt() 
     {
         
     }
 
     public void    Erstellemap()
-    {for(int i=0;i<13;i++){
+    {
+     for(int i=0;i<55;i++){
+                for(int j=0;j<55;j++){
+                
+                
+                Welt[i][j]=new Boden();
+                
+                
+                }
+    
+        
+        
+        }  
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        for(int i=0;i<13;i++){
     Welt[17][i]=Wand;
     
     
@@ -80,7 +109,7 @@
      Welt[18][23]=Tür2;
      Welt[26][30]=Tür3;
      Welt[51][13]=Tür4;
-     Welt[9][3]=Schlüssel;
+     Welt[3][9]=Schlüssel;
      Welt[30][7]=Schlüssel;
      Welt[12][13]=Schlüssel;
      Welt[1][0]=Schlüssel;
@@ -105,8 +134,21 @@
     
       
     }
-
-   
+    public boolean aufhebbar(int i,int x){
+       
+        return  Welt[i][x].getAufhebbar();
+        
+        
+        
+        
+    
+    }
+   public String getName(int i,int x){
+       return  Welt[i][x].getName();
+        
+       
+       
+    }
     
 
 }

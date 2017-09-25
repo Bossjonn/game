@@ -5,21 +5,22 @@
       int Kraft=25;
     int Ausdauer=30;
     int Intelligenz=90;
-      String[] Inventar=new String[30];
+     Gegendstang[] Inventar=new  Gegendstang[30];
+     Schlüssel Sclüssel=new Schlüssel();
     public Assasine()
     { 
          
-        Inventar[0]="Klinge";
+        Inventar[0]=new Schlüssel();
         
        
     }
- public String sagItem(){
+ public Gegendstang sagItem(){
     
     return Inventar[0];
     
     
     }
-   public void nehme(int n,String m){
+   public void nehme(int n,Gegendstang m){
     
         Inventar[n]=m;
         System.out.println("du hast im "+n+" Slot einen "+m);

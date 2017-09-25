@@ -1,9 +1,8 @@
 #BlueJ class context
-comment0.target=Sch\u00FCtze
+comment0.params=
+comment0.target=Sch\u00FCtze()
 comment1.params=
-comment1.target=Sch\u00FCtze()
-comment2.params=
-comment2.target=java.lang.String\ sagItem()
-comment3.params=n\ m
-comment3.target=void\ nehme(int,\ java.lang.String)
-numComments=4
+comment1.target=Gegendstang\ sagItem()
+comment2.params=n\ m
+comment2.target=void\ nehme(int,\ Gegendstang)
+numComments=3

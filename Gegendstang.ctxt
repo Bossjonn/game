@@ -1,5 +1,8 @@
 #BlueJ class context
-comment0.target=Gegendstang
+comment0.params=
+comment0.target=Gegendstang()
 comment1.params=
-comment1.target=Gegendstang()
-numComments=2
+comment1.target=boolean\ getAufhebbar()
+comment2.params=
+comment2.target=java.lang.String\ getName()
+numComments=3

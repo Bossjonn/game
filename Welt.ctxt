@@ -1,7 +1,10 @@
 #BlueJ class context
-comment0.target=Welt
+comment0.params=
+comment0.target=Welt()
 comment1.params=
-comment1.target=Welt()
-comment2.params=
-comment2.target=void\ Erstellemap()
-numComments=3
+comment1.target=void\ Erstellemap()
+comment2.params=i\ x
+comment2.target=boolean\ aufhebbar(int,\ int)
+comment3.params=i\ x
+comment3.target=java.lang.String\ getName(int,\ int)
+numComments=4

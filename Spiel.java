@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class Spiel
 {   
     private Scanner console = new Scanner(System.in);
+    private Scanner consol = new Scanner(System.in);
     private String Klasse;
     private String Input;
     private String Name;
@@ -40,17 +41,17 @@ public class Spiel
         System.out.println("Du bist ein "+Klasse+ " Los gehts!");
         switch(Klasse){
         case"Magier":  
-            String Ü=Magier.sagItem();
+            Gegendstang Ü=Magier.sagItem();
             System.out.println("Am Anfang hast du ein "+ Ü);
             break;
         case"Kämpfer":  
-        String Q=Kämpfer.sagItem();
+       Gegendstang Q=Kämpfer.sagItem();
         System.out.println("Am Anfang hast du ein "+ Q);    
          break;
-          case"Assasine": String L=Kämpfer.sagItem();
+          case"Assasine": Gegendstang L=Kämpfer.sagItem();
         System.out.println("Am Anfang hast du ein "+ L);
           break; 
-            case"Schütze": String B=Schütze.sagItem();
+            case"Schütze":Gegendstang B=Schütze.sagItem();
         System.out.println("Am Anfang hast du ein "+ B);
           break;  
             
@@ -70,7 +71,7 @@ public class Spiel
         String Frage;
         System.out.println("Wie heißt du denn?");
         Name= console.next();
-        System.out.println("Du bist also "+ Klasse +" "+ Name);Frage= console.next();
+        System.out.println("Du bist also "+ Klasse +" "+ Name+" oder?");Frage= console.next();
         if(Frage.equalsIgnoreCase("Ja")){
 
             
@@ -129,18 +130,17 @@ public class Spiel
                   }
                   break;
                    
-            case "nimm":nehme(z,f);      
-                  break;
+           
             default:
                 System.out.println(String.format("Unknown command {}", commandWord));
         }
-        
+        Check();
         return wantToQuit;
     }     
-    private void nehme(int b,String n){
+    private void nehme(int b,Gegendstang n){
         switch(Klasse){
         
-        case "Magier":Magier.nehme(b,n);
+            case "Magier":Magier.nehme(b,n);
             break;
               case "Assasine":Assasine.nehme(b,n);
             break;
@@ -157,6 +157,31 @@ public class Spiel
     
     
     }}
+    private void Check(){
+       if(map.aufhebbar(Koordia,Koordib)==true){
+        
+           System.out.println("Du kannst hier was aufheben");
+           System.out.println("möchtest du "+map.getName(Koordia,Koordib)+"aufheben ?");
+            String Wahl=console.next();
+            switch(Wahl){
+                case "Ja":System.out.println("in welches Fach?"); int D=consol.next(int);           nehme(D,Welt[Koordia][Koordib]);
+                break;
+                case "Nein":System.out.println("ok");
+                break;
+           
+                
+           
+           
+        }}
+      else{System.out.println("Nix zum Aufheben in Offenbach");}  
+        
+        
+        
+        
+        
+        
+        
+    }
     private void helfe(){
         System.out.println("hier alle Kommandos");
 

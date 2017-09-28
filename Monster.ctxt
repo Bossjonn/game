@@ -1,14 +1,10 @@
 #BlueJ class context
 comment0.params=
-comment0.target=Mensch()
+comment0.target=Monster()
 comment1.params=
 comment1.target=int\ gebLeben()
 comment2.params=
 comment2.target=int\ gebSchaden()
 comment3.params=b
 comment3.target=void\ Aua(int)
-comment4.params=n\ m
-comment4.target=void\ nehme(int,\ Gegendstang)
-comment5.params=
-comment5.target=Gegendstang\ sagItem()
-numComments=6
+numComments=4

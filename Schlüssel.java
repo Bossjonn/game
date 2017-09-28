@@ -8,7 +8,10 @@ public class Schlüssel extends Gegendstang
      Name="Schlüssel";
     verschlossentür=false;
     }
+    public String gebNam(){
+    return Name;
     
+    }
     
 }
 

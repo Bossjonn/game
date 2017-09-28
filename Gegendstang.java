@@ -6,7 +6,7 @@ public class Gegendstang
     public boolean aufhebbar;
 
     public Gegendstang()
-    {
+    {Name="ein Gegendstand";
      
     }
     public boolean getAufhebbar(){

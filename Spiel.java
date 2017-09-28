@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Spiel
 {   
     private Scanner console = new Scanner(System.in);
-    private Scanner consol = new Scanner(System.in);
+
     private String Klasse;
     private String Input;
     private String Name;
@@ -17,6 +17,7 @@ public class Spiel
     int Koordia;
     int Koordib;
     int z;
+    Mensch Mensch=new Mensch();
     String f;
     public Spiel()
     {
@@ -138,25 +139,10 @@ public class Spiel
         return wantToQuit;
     }     
     private void nehme(int b,Gegendstang n){
-        switch(Klasse){
         
-            case "Magier":Magier.nehme(b,n);
-            break;
-              case "Assasine":Assasine.nehme(b,n);
-            break;
-               case "Kämpfer":Kämpfer.nehme(b,n);
-            break;
-               case "Schütze":Assasine.nehme(b,n);
-            break;
-    
-    
-    
-    
-    
-    
-    
-    
-    }}
+        Mensch.nehme(b,n);
+        
+    }
     private void Check(){
        if(map.aufhebbar(Koordia,Koordib)==true){
         
@@ -164,7 +150,14 @@ public class Spiel
            System.out.println("möchtest du "+map.getName(Koordia,Koordib)+"aufheben ?");
             String Wahl=console.next();
             switch(Wahl){
-                case "Ja":System.out.println("in welches Fach?"); int D=consol.next(int);           nehme(D,Welt[Koordia][Koordib]);
+                case "Ja":System.out.println("in welches Fach?");   
+                int Fach;
+                Fach=console.nextInt();
+                
+                
+                
+                
+                nehme(Fach,Welt[Koordia][Koordib]);
                 break;
                 case "Nein":System.out.println("ok");
                 break;
@@ -209,8 +202,8 @@ public class Spiel
         
             private void geheS(Command command){
 
-            Koordia=Koordia+1;
-            System.out.println("Du bist bei "+Koordia+" " + Koordib);
+                Koordia=Koordia+1;
+                System.out.println("Du bist bei "+Koordia+" " + Koordib);
 
         
         

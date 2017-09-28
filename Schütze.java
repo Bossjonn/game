@@ -13,18 +13,5 @@ public class Schütze extends Mensch
         Inventar[0]=new Schlüssel();
        
     }
-    public Gegendstang sagItem(){
-        return Inventar[0];
-    
-    
-    }
-      public void nehme(int n,Gegendstang m){
-    
-        Inventar[n]=m;
-        System.out.println("du hast im "+n+" Slot einen "+m);
-        
-        
-        
-        
-    }
+  
     }

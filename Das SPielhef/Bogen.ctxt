@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Bogen
+comment1.params=
+comment1.target=Bogen()
+comment2.params=
+comment2.target=java.lang.String\ gebNam()
+comment3.params=Mensch
+comment3.target=void\ Inhandbonus(Mensch)
+comment4.params=Mensch
+comment4.target=void\ Aushandabzug(Mensch)
+numComments=5

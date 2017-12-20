@@ -1,5 +1,6 @@
 
-public class Monster 
+
+public class Monster extends Gegendstang
 {
 
     
@@ -17,7 +18,7 @@ public class Monster
        Leben=200;
 
        Schaden=10;
-
+        Monster=true;
     }
 
 

@@ -1,19 +1,14 @@
-
-   
-        
-      public class Welt
+  public class Welt
 {
     
     Gegendstang Gegendstang;
     Gegendstang[][]Welt=  new Gegendstang[56][56];
     Wand Wand=new Wand();
-    Tür Tür1=new Tür();
-    Tür Tür2=new Tür();
-    Tür Tür3=new Tür();
-    Tür Tür4=new Tür();
-    Tür Tür5=new Tür();
+   
     Schlüssel Schlüssel=new Schlüssel();
-    Boden Boden=new Boden();
+   Gegendstang Monster=new Monster();
+   Boden Boden =new Boden();
+   Schwert Schwert=new Schwert();
     public Welt() 
     {
         
@@ -21,27 +16,9 @@
 
     public void    Erstellemap()
     {
-     for(int i=0;i<55;i++){
-                for(int j=0;j<55;j++){
-                
-                
-                Welt[i][j]=new Boden();
-                
-                
-                }
+   
+        
     
-        
-        
-        }  
-        
-        
-        
-        
-        
-        
-        
-        
-        
         
         
         
@@ -105,17 +82,14 @@
     
     
     }  
-     Welt[17][5]=Tür1;
-     Welt[18][23]=Tür2;
-     Welt[26][30]=Tür3;
-     Welt[51][13]=Tür4;
+  
      Welt[3][9]=Schlüssel;
      Welt[30][7]=Schlüssel;
      Welt[12][13]=Schlüssel;
-     Welt[1][0]=Schlüssel;
-     
-        
-        
+     Welt[1][0]=Monster;
+     Welt[1][1]=Schwert;
+      Welt[0][0]=Monster;  
+        Welt[0][1]=Schwert;
         
         
         
@@ -134,26 +108,47 @@
     
       
     }
-    public boolean aufhebbar(int i,int x){
-       
-        return  Welt[i][x].getAufhebbar();
-        
-        
-        
-        
-    
-    }
+
    public String getName(int i,int x){
        return  Welt[i][x].getName();
         
        
        
     }
+  public boolean aufhebbar(int i,int x){
+      
+      if(  Welt[i][x].getaufhebbar()==true){
+        return true;
+        
+        }
+        else return false;
     
-
+    }
+  public boolean Monster(int i,int x){
+      
+      if( Welt[i][x].Monster()==true){
+        return true;
+        
+        }
+        else return false;
+    }
+    public Gegendstang getInhalt(int l,int k){
+        
+        return Welt[l][k];
+        
+    }
+    public void set(int h,int g,Gegendstang f){
+    Welt[h][g]=f;
+    
+    }
 }
 
         
         
+
+
+        
+        
     
+
 

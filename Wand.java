@@ -1,4 +1,5 @@
 
+
 public class Wand extends Gegendstang
 {
     String Name;

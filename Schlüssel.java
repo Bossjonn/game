@@ -1,17 +1,21 @@
+
 public class Schlüssel extends Gegendstang
 {
-    String Name;
+   Gegendstang Gegendstang= new Gegendstang();
     boolean verschlossentür;
     public Schlüssel()
     {
      aufhebbar=true;
-     Name="Schlüssel";
+    
     verschlossentür=false;
     }
-    public String gebNam(){
+    
+    public String gebName(){
     return Name;
     
     }
-    
+   public void set(){
+           Gegendstang.setName("Schlüssel");
+    }
 }
 

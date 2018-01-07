@@ -1,10 +1,15 @@
 #BlueJ class context
-comment0.params=
-comment0.target=Monster()
+comment0.target=Monster
 comment1.params=
-comment1.target=int\ gebLeben()
+comment1.target=Monster()
 comment2.params=
-comment2.target=int\ gebSchaden()
-comment3.params=b
-comment3.target=void\ Aua(int)
-numComments=4
+comment2.target=java.lang.String\ getName()
+comment3.params=n
+comment3.target=void\ setLeben(int)
+comment4.params=
+comment4.target=int\ gebLeben()
+comment5.params=
+comment5.target=int\ gebSchaden()
+comment6.params=b
+comment6.target=void\ Aua(int)
+numComments=7

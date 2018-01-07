@@ -20,12 +20,13 @@ public class Magier extends Mensch
        
     }
     public void setMensch(Mensch pMensch){
-                    pMensch.setKraft(Kraft);
-                    pMensch.setAusdauer(Ausdauer);
-                    pMensch.setIntelligenz(Intelligenz);
-        
-        
-        
+        pMensch.setKraft(Kraft);
+        pMensch.setAusdauer(Ausdauer);
+        pMensch.setIntelligenz(Intelligenz);
+    
+    
+    
+    
     }
     }
 

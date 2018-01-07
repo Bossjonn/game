@@ -1,14 +1,22 @@
+
   public class Welt
 {
     
     Gegendstang Gegendstang;
-    Gegendstang[][]Welt=  new Gegendstang[56][56];
+    Gegendstang[][]Welt=  new Gegendstang[61][51];
     Wand Wand=new Wand();
-   
-    Schlüssel Schlüssel=new Schlüssel();
-   Gegendstang Monster=new Monster();
+
+    
+   Monster Monster=new Monster();
    Boden Boden =new Boden();
-   Schwert Schwert=new Schwert();
+   Schwert Schwert =new Schwert();
+   Goblin Goblin=new Goblin();
+   Endboss Endboss=new Endboss();
+   Wolf Wolf =new Wolf();
+   Dämon Dämon =new Dämon();
+   Bogen Bogen=new Bogen();
+   Schild Schild =new Schild();
+   Apfel Apfel=new Apfel();
     public Welt() 
     {
         
@@ -18,22 +26,51 @@
     {
    
         
-    
+       for(int i=0;i<60;i++){
+        
+        
+          for(int j=0;j<50;j++){
+        
+              Welt [i][j]=Boden;
         
         
         
         
         
         
-        for(int i=0;i<13;i++){
-    Welt[17][i]=Wand;
-    
+        
+        
+        } 
+        
+        
+        
+        
+        
+        
+        
+        } 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        for(int i=0;i<60;i++){
+    Welt[i][0]=Wand;
+    Welt[i][1]=Wand;
     
     
     
     
     }
-     for(int i=7;i<17;i++){
+     for(int i=0;i<61;i++){
     Welt[i][7]=Wand;
     
     
@@ -41,57 +78,204 @@
     
     
     }
-       for(int i=17;i<55;i++){
-    Welt[i][13]=Wand;
+       for(int i=0;i<20;i++){
+    Welt[i][12]=Wand;
     
     
     
     
     
     } 
-     for(int i=13;i<23;i++){
-    Welt[19][i]=Wand;
+     for(int i=23;i<45;i++){
+    Welt[i][21]=Wand;
     
     
     
     
     
     }   
-         for(int i=0;i<25;i++){
-    Welt[i][23]=Wand;
+       
+    for(int i=48;i<59;i++){
+    Welt[i][21]=Wand;
     
     
     
     
     
-    }   
-        
-          for(int i=23;i<37;i++){
-    Welt[25][i]=Wand;
+    } 
+    for(int i=0;i<25;i++){
+    Welt[i][28]=Wand;
     
     
     
     
     
-    }  
-              for(int i=0;i<55;i++){
-    Welt[i][37]=Wand;
+    } 
+    for(int i=36;i<54;i++){
+    Welt[i][28]=Wand;
     
     
     
     
     
-    }  
+    } 
+        for(int i=56;i<60;i++){
+    Welt[i][28]=Wand;
+    
+    
+    
+    
+    
+    } 
+            for(int i=30;i<=31;i++){
+    Welt[i][33]=Wand;
+    
+    
+    
+    
+    
+    } 
+      for(int i=36;i<=59;i++){
+    Welt[i][34]=Wand;
+    
+    
+    
+    
+    
+    } 
+         for(int i=31;i<=50;i++){
+    Welt[i][41]=Wand;
+    
+    
+    
+    
+    
+    } 
+            for(int i=53;i<=59;i++){
+    Welt[i][41]=Wand;
+    
+    
+    
+    
+    
+    } 
+               for(int i=3;i<=25;i++){
+    Welt[i][42]=Wand;
+    
+    
+    
+    
+    
+    } 
+            for(int i=0;i<50;i++){
+    Welt[0][i]=Wand;
+    Welt[60][i]=Wand;
+     Welt[1][i]=Wand;
+    
+    
+    
+    
+    }
+               for(int i=0;i<5;i++){
+    Welt[20][i]=Wand;
   
-     Welt[3][9]=Schlüssel;
-     Welt[30][7]=Schlüssel;
-     Welt[12][13]=Schlüssel;
-     Welt[1][0]=Monster;
-     Welt[1][1]=Schwert;
-      Welt[0][0]=Monster;  
-        Welt[0][1]=Schwert;
-        
-        
+    
+    
+    
+    
+    
+    }
+                   for(int i=7;i<21;i++){
+    Welt[20][i]=Wand;
+  
+    
+    
+    
+    
+    
+    }
+                 for(int i=0;i<3;i++){
+    Welt[35][i]=Wand;
+  
+    
+    
+    
+    
+    
+    }
+                   for(int i=5;i<21;i++){
+    Welt[35][i]=Wand;
+  
+    
+    
+    
+    
+    
+    }
+                       for(int i=21;i<37;i++){
+    Welt[25][i]=Wand;
+  
+    
+    
+    
+    
+    
+    }
+                        for(int i=41;i<51;i++){
+    Welt[25][i]=Wand;
+  
+    
+    
+    
+    
+    
+    }
+                        for(int i=21;i<33;i++){
+    Welt[30][i]=Wand;
+  
+    
+    
+    
+    
+    
+    }
+                            for(int i=21;i<28;i++){
+    Welt[44][i]=Wand;
+  
+    
+    
+    
+    
+    
+    }
+                               for(int i=33;i<38;i++){
+    Welt[31][i]=Wand;
+  
+    
+    
+    
+    
+    
+    }
+                               for(int i=38;i<41;i++){
+    Welt[31][i]=Wand;
+  
+    
+    
+    
+    
+    
+    }
+    
+     Welt[2][1]=Schwert;
+     Welt[12][2]=Schwert;
+     Welt[39][2]=Goblin;
+     Welt[50][2]=Goblin;
+     Welt[6][3]=Dämon;   
+     Welt[26][3]=Bogen;   
+     Welt[32][3]=Dämon;
+     Welt[1][1]=Goblin;
+     Welt[2][2]=Goblin;
         
         
         
@@ -108,7 +292,11 @@
     
       
     }
-
+    public Gegendstang mapget(int z,int h){
+    
+        return Welt[z][h];
+    
+    }
    public String getName(int i,int x){
        return  Welt[i][x].getName();
         
@@ -117,35 +305,19 @@
     }
   public boolean aufhebbar(int i,int x){
       
-      if(  Welt[i][x].getaufhebbar()==true){
-        return true;
-        
-        }
-        else return false;
-    
+      return Welt[i][x].aufhebbar();
     }
   public boolean Monster(int i,int x){
       
-      if( Welt[i][x].Monster()==true){
-        return true;
-        
-        }
-        else return false;
+      return Welt[i][x].Monster();
     }
-    public Gegendstang getInhalt(int l,int k){
-        
-        return Welt[l][k];
-        
-    }
-    public void set(int h,int g,Gegendstang f){
-    Welt[h][g]=f;
+    public void set(int h,int j,Gegendstang u){
+        Welt[h][j]=u;
+    
+    
     
     }
 }
-
-        
-        
-
 
         
         

@@ -1,13 +1,14 @@
-public class Endboss extends Monster{
+
+    public class Goblin extends Monster{
     
 
 
    
 
-    public Endboss()
+    public Goblin()
 
     { 
-        Name="Endboss";
+        Name="Goblin";
        Leben=500;
         draufgehbar=true;
        Schaden=5;

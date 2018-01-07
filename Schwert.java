@@ -1,14 +1,13 @@
 
 public class Schwert extends Gegendstang
 {
-    
-    boolean verschlossentür;
-    
+   
+   
     public Schwert()
     {
      aufhebbar=true;
      Name="Schwert";
-     Monster=false;
+     draufgehbar=true;
     }
     public String gebNam(){
     return Name;
@@ -16,14 +15,13 @@ public class Schwert extends Gegendstang
     }
     public void Inhandbonus(Mensch Mensch){
     
-        Mensch.setKraft(90);
+        Mensch.setKraft(10);
     
     }
        public void Aushandabzug(Mensch Mensch){
     
-        Mensch.setKraft(0);
+        Mensch.setKraft(-10);
     
     }
-   
 }
 

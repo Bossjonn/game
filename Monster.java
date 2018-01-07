@@ -14,14 +14,21 @@ public class Monster extends Gegendstang
     public Monster()
 
     {
+       String Name=null;
+  
+        draufgehbar=true;
 
-       Leben=200;
-
-       Schaden=10;
         Monster=true;
     }
-
-
+    public String getName(){
+        return Name;
+    
+    }
+    public void setLeben(int n){
+    
+        Leben=n;
+        
+    }
 
     public int gebLeben(){
 

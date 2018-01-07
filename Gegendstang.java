@@ -6,14 +6,12 @@ public class Gegendstang
     public String Name;
    public  boolean aufhebbar;
    public boolean Monster;
+   public boolean draufgehbar;
     public Gegendstang()
     {
      Monster=false;
      aufhebbar=false;
-     
-    }
-    public void setName(String pName){
-    Name=pName;
+     draufgehbar=false;
     }
     public boolean getAufhebbar(){
    
@@ -29,13 +27,18 @@ public class Gegendstang
     
     }
     public void Inhandbonus(){}
-    public boolean getaufhebbar(){
+    public boolean aufhebbar(){
        
         return  aufhebbar;
         
         
         
         
+    
+    }
+    public boolean getdurchgehbar(){
+    
+    return draufgehbar;
     
     }
 }

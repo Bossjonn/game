@@ -1,8 +1,7 @@
 #BlueJ class context
-comment0.params=
-comment0.target=Gegendstang()
-comment1.params=pName
-comment1.target=void\ setName(java.lang.String)
+comment0.target=Gegendstang
+comment1.params=
+comment1.target=Gegendstang()
 comment2.params=
 comment2.target=boolean\ getAufhebbar()
 comment3.params=
@@ -12,5 +11,7 @@ comment4.target=boolean\ Monster()
 comment5.params=
 comment5.target=void\ Inhandbonus()
 comment6.params=
-comment6.target=boolean\ getaufhebbar()
-numComments=7
+comment6.target=boolean\ aufhebbar()
+comment7.params=
+comment7.target=boolean\ getdurchgehbar()
+numComments=8

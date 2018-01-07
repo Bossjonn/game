@@ -15,8 +15,7 @@ public class Boden extends Gegendstang
      */
     public Boden()
     {
-        // Instanzvariable initialisieren
-        x = 0;
+        draufgehbar=true;
     }
 
     /**

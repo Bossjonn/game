@@ -1,14 +1,13 @@
 #BlueJ class context
-comment0.params=pMensch\ pMonster
-comment0.target=Boxen(Mensch,\ Monster)
+comment0.target=Boxen
 comment1.params=
-comment1.target=void\ getschaden()
-comment2.params=
-comment2.target=void\ Menschangriff1()
+comment1.target=Boxen()
+comment2.params=pMensch\ pMonster
+comment2.target=void\ boxen(Mensch,\ Monster)
 comment3.params=
-comment3.target=void\ Monsterangriff()
+comment3.target=void\ Menschangriff1()
 comment4.params=
 comment4.target=void\ Menschangriff2()
-comment5.params=pMensch\ pMonster
-comment5.target=void\ boxen(Mensch,\ Monster)
+comment5.params=
+comment5.target=void\ Monsterangriff()
 numComments=6

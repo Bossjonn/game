@@ -1,13 +1,13 @@
 
 public class Schild extends Gegendstang
 {
-
+    
     boolean verschlossentür;
     public Schild()
     {
      aufhebbar=true;
      Name="Schild";
-    Monster=false;
+    draufgehbar=true;
     }
     public String gebNam(){
     return Name;
@@ -15,12 +15,12 @@ public class Schild extends Gegendstang
     }
     public void Inhandbonus(Mensch Mensch){
     
-        Mensch.setRüstung(80);
+        Mensch.setRüstung(10);
     
     }
       public void Aushandabzug(Mensch Mensch){
     
-        Mensch.setRüstung(0);
+        Mensch.setRüstung(-10);
     
     }
 }

@@ -9,32 +9,24 @@ public class Mensch
 
     
 
-    public int Kraft;
+    public int Kraft=20;
 
     int Ausdauer;
 
-    int Leben;
+    int Leben=100;
 
     int Intelligenz;
 
-     public int Kraft2;
+
     Gegendstang[] Inventar=new Gegendstang[10];
  Random randomGenerator = new Random();
 
     Gegendstang Gegendstand=new Gegendstang();
 int Rüstung;
     public Mensch(){
-       int Rüstung=0;
-     Kraft=30;
+   
 
-   Ausdauer=10;
-
-        Leben=100;
-        
-     Intelligenz=9;
-
-    
-
+             
 
     
 
@@ -50,41 +42,79 @@ int Rüstung;
 
     
 
+}
+
+public void addiereKraft(int z){
+
+    Kraft=Kraft+z;
+
+}
+public void addiereRüstung(int z){
+
+   Rüstung=Rüstung+z;
+   Leben=Leben+Rüstung;
 }
 public void nehme(int l,Gegendstang b){
+   
     Inventar[l]=b;
+    
+}  
+public void dropItems(int i){
+   
+    
 
-}
+   
+        
+    System.out.println("Du hast im Fach "+i+ "ein"+Inventar[i].getName());
+    
+    
+    
+    
+    }
+  
+     public void addiereLeben(int z){
+        Leben=Leben+z;
+        
+        
+        
+        
+        }        
+    
+    
+    
+    
 public int gebLeben(){
 
         return Leben;   
 
     }
+    public void setAusdauer(int g){
+    Ausdauer=g;
+    
+    
+    }
 public void setRüstung(int l)
 {   
 
 
-    Rüstung=l;}
-    public void setAusdauer(int l)
-{   
-
-
-   Ausdauer=l;}
+    Rüstung=l;
+    
+}
     public void setLeben(int l)
 {   
 
 
     Leben=l;}
-        public void setIntelligenz(int l)
-{   
-
-
-    Intelligenz=l;}
     public void setKraft(int l)
 {   
 
 
     Kraft=l;}
+        public void setIntelligenz(int l)
+{   
+
+
+    Intelligenz=l;}
     public int getRüstung()
 {   
 
@@ -95,46 +125,20 @@ public void setRüstung(int l)
 
 
     return Leben;}
-    public int getIntelligenz()
-{   
-
-
-    return Intelligenz;}    
-        public int getAusdauer()
-{   
-
-
-    return Leben;}
     public int getKraft()
 {   
 
 
-    return Ausdauer;}
+    return Kraft;}
+    public Gegendstang getInventar(int h){
+    return Inventar[h];
+    }
       public int gebSchaden(){
 
         return Kraft;
 
     }
-    public int gebSchaden2(){
-        int randomInt = randomGenerator.nextInt(10);
-
-        Kraft2=30+randomInt*(20 - 2) +2;
-
-        return Kraft2;
-
-        
-
-        
-
-        
-
-        
-
-        
-
-        
-
-    }
+   
 
     public void Aua(int b){
 

@@ -5,6 +5,7 @@ public class Assasine extends Mensch
     int Ausdauer=30;
     int Intelligenz=90;
      
+  
     public Assasine()
     { 
          
@@ -12,15 +13,16 @@ public class Assasine extends Mensch
         
        
     }
-     public void setMensch(Mensch pMensch){
-                    pMensch.setKraft(Kraft);
-                    pMensch.setAusdauer(Ausdauer);
-                    pMensch.setIntelligenz(Intelligenz);
-        
-        
-        
+
+  public void setMensch(Mensch pMensch){
+        pMensch.setKraft(Kraft);
+        pMensch.setAusdauer(Ausdauer);
+        pMensch.setIntelligenz(Intelligenz);
+    
+    
+    
+    
     }
-  
     }
 
     

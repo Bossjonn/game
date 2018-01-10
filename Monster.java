@@ -14,7 +14,7 @@ public class Monster extends Gegendstang
     public Monster()
 
     {
-       String Name=null;
+      
   
         draufgehbar=true;
 

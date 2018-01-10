@@ -28,27 +28,49 @@ private int SchadenMe2;
 
     {
 
-        LebenMe=Mensch.gebLeben();
-
-        LebenMo=Monster.gebLeben();
+  
 
         nochbock=true;
 
     }
-
+    public void Menschangriff1(){
+        
+            LebenMo=LebenMo-SchadenMe;
+        
+        
+        
+        
+}
+    public void Menschangriff2(){
+        SchadenMe2=6*SchadenMe*(int)(Math.random()*20);
+        
+           LebenMo=LebenMo-SchadenMe2;
+        
+        
+        
+        
+        }
+public void Monsterangriff(){
+        
+     LebenMe=LebenMe-SchadenMo;
+        
+        
+        
+        
+}
 
     public void boxen(Mensch pMensch, Monster pMonster){
         Mensch Mensch=pMensch;
         Monster Monster=pMonster;
          LebenMe=Mensch.gebLeben();
-         SchadenMe=Mensch.gebSchaden();
+         SchadenMe=Mensch.getKraft();
          SchadenMo=Monster.gebSchaden();
         LebenMo=Monster.gebLeben();
         String Wahl="leer";
 
         System.out.println("Du triffst auf ein Monster.Du hast am Anfang"+ LebenMe + "Leben,und das Monster"+LebenMo+"Leben");
 
-        while(Monster.gebLeben()>0 && Mensch.getLeben()>0 &&nochbock==true){
+        while(LebenMo>0 && LebenMe>0 &&nochbock==true){
 
             System.out.println("Was willst du machen?");
 
@@ -70,9 +92,9 @@ private int SchadenMe2;
 
             
 
-            System.out.println("Du hast noch"+Mensch.getLeben()+"Leben,da das "+Monster.getName()+" dir "+SchadenMo+"hinzugefügt hat.");
+            System.out.println("Du hast noch "+ LebenMe +" Leben,da das "+Monster.getName()+" dir "+SchadenMo+" hinzugefügt hat. ");
 
-            System.out.println("Und das "+Monster.getName()+""+Monster.gebLeben()+"Leben,da du ihm "+SchadenMe+"hinzugefügt hat.");
+            System.out.println("Und das "+ Monster.getName() +""+ LebenMo +"Leben,da du ihm "+SchadenMe+"hinzugefügt hat.");
 
             break;
 
@@ -88,9 +110,9 @@ private int SchadenMe2;
 
             
 
-            System.out.println("Du hast noch"+Mensch.getLeben()+"Leben,da das "+Monster.getName()+" dir "+SchadenMo+"hinzugefügt hat.");
+            System.out.println(" Du hast noch "+ LebenMe +  " Leben,da das "+Monster.getName()+" dir "+SchadenMo+" hinzugefügt hat.");
 
-            System.out.println("Und das" +Monster.getName()+""+Monster.gebLeben()+"Leben,da du ihm "+SchadenMe2+"hinzugefügt hat.");
+            System.out.println(" Und das " +Monster.getName()+""+LebenMo+" Leben,da du ihm "+SchadenMe2+" hinzugefügt hat.");
 
             break;
 
@@ -165,33 +187,9 @@ private int SchadenMe2;
     
 
     }
-
-}
-    public void Menschangriff1(){
-        
-            Monster.setLeben(Monster.gebLeben()-SchadenMe);;
-        
-        
-        
-        
+    pMensch.setLeben(LebenMe);
+    
 }
 
-public void Menschangriff2(){
-        SchadenMe2=6*SchadenMe*(int)(Math.random());
-        
-            Monster.setLeben(Monster.gebLeben()-SchadenMe2);
-        
-        
-        
-        
-}
-public void Monsterangriff(){
-        
-       Mensch.setLeben(Mensch.getLeben()-SchadenMo);
-        
-        
-        
-        
-}
 
 }

@@ -22,12 +22,12 @@ public class Inhand
         
     }
     public void setInhand(Mensch pMensch,Gegendstang l,int Slot){
-        if(Inhand!=null){
+        
         if(Inhand==Schwert){pMensch.addiereKraft(-30);}
         else if(Inhand==Bogen){pMensch.addiereKraft(-15);}
         else if(Inhand==Schild){pMensch.addiereRüstung(-15);}
         else if(Inhand==Apfel){Inhand=null;}
-    }
+    
         Gegendstang f=new Gegendstang();
         f=pMensch.getInventar(Slot);
         pMensch.nehme(Slot,Inhand);

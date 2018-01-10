@@ -30,10 +30,12 @@ public class Spiel
     Wolf Wolf=new Wolf();
     Dämon Dämon=new Dämon(); 
     Endboss Endboss=new Endboss();
+    String Tageszeit;
+    int Counter;
     public Spiel()
     {
         parser = new Parser();
-
+        Tageszeit="Tag";
         Spielen();
     }
 
@@ -91,9 +93,13 @@ public class Spiel
     public void  game1(){
 
         while (Koordia!=24 || Koordib!=43 && Mensch.getLeben()>0) {
+             
+            
             System.out.println("Was willst du machen?");
             Command command = parser.getCommand();
             action(command);
+          
+        
         }
         if(Mensch.getLeben()<0){
             System.out.println("Ok du hast das game abgebrochen...Bis demnächst.....drücke etwas um das programm abzubechen");
@@ -108,9 +114,25 @@ public class Spiel
         
         
     }     
-
+    private void Counter(){
+    
+        if(Counter%3 ==0){
+              
+                     Tageszeit="Nacht";Mensch.addiereKraft(-10);System.out.println("Jetzt ist es Nacht.Du bist schwächer!");
+              
+            }
+                if(Counter%4 ==0){
+              
+                  
+                    Tageszeit="Tag";Mensch.addiereKraft(10);System.out.println("Jetzt ist es Tag.Du bist stärker!");
+                
+            }
+    
+    }
     private boolean action(Command command) 
-    {
+    {    
+        Counter++;
+        Counter();
         boolean wantToQuit = false;
         if(command.isUnknown()) {
             System.out.println("Bitte was?!");
@@ -181,6 +203,14 @@ public class Spiel
          
          
          Inhand.setInhand(Mensch,Mensch.getInventar(Slot),Slot);
+    
+    
+    }
+    private void helfe(){
+    System.out.println("Hier sind alle Kommandos:");
+    System.out.println("Im Kampf: Angriff1,Angriff2,Rückzug");
+    System.out.println("Sonst:gehe Norden,gehe Süden,gehe Westen,gehe Osten,Inhand,getInhand,Rucksag,Items,Leben,Kraft,Rüstung,hinlegen");
+    
     
     
     }
@@ -259,10 +289,7 @@ public class Spiel
         
         
     }}
-    private void helfe(){
-        System.out.println("hier alle Kommandos");
-
-    }
+ 
 
        private void geheN(Command command){
            if (map.mapget(Koordia-1, Koordib).getdurchgehbar()==true){

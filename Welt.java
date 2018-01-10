@@ -274,10 +274,24 @@
      Welt[6][3]=Dämon;   
      Welt[26][3]=Bogen;   
      Welt[32][3]=Dämon;
-     Welt[1][1]=Goblin;
-     Welt[2][2]=Goblin;
-        
-        
+     Welt[8][5]=Bogen;
+     Welt[19][5]=Wolf;
+     Welt[22][5]=Schwert;
+     Welt[50][5]=Schwert;
+     Welt[24][6]=Goblin;
+     Welt[13][7]=Dämon;
+     Welt[40][7]=Goblin;
+     Welt[49][9]=Goblin;
+     Welt[57][9]=Dämon;
+     Welt[3][10]=Goblin;
+     Welt[28][13]=Dämon;
+     Welt[18][15]=Apfel;
+     Welt[1][3]=Dämon;
+     Welt[32][15]=Dämon;
+        Welt[40][15]=Apfel;
+     Welt[41][6]=Wolf;
+     Welt[41][14]=Wolf;
+     
         
         
         
